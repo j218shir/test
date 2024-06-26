@@ -4,8 +4,8 @@
 <meta charset="UTF-8"/>
 <script type="text/javascript">
 function sum()
-{
-    form.c.value = form.a.value + form.b.value;
+{//文字列型での演算処理は無理なので、データの型変換が必要（数値型）
+    form.c.value = Number(form.a.value) + Number(form.b.value);
 }
 </script>
 </head>
